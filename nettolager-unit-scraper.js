@@ -133,7 +133,7 @@ async function scrapeNettoLagerUnits() {
 
   // Save the JSON data to a file
   fs.writeFileSync(
-    "storageUnitsData.json",
+    "nettolagerUnits.json",
     JSON.stringify(allLocationsUnitData, null, 2)
   );
 }

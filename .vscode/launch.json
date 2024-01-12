@@ -7,9 +7,18 @@
     {
       "type": "node",
       "request": "launch",
-      "name": "Launch Puppeteer",
+      "name": "Nettolager Unit Scraper",
       "skipFiles": ["<node_internals>/**"],
-      "program": "${workspaceFolder}/unit-scraper.js",
+      "program": "${workspaceFolder}/nettolager-unit-scraper.js",
+      "args": ["--inspect-brk"],
+      "console": "integratedTerminal"
+    },
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "Boxdepotet Unit Scraper",
+      "skipFiles": ["<node_internals>/**"],
+      "program": "${workspaceFolder}/boxdepotet-unit-scraper.js",
       "args": ["--inspect-brk"],
       "console": "integratedTerminal"
     }
